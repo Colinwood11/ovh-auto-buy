@@ -74,7 +74,9 @@ func runTask() {
 					}
 
 					if !foundDatacenter {
-						break
+						fmt.Printf("Datacenter %s not in target list\n", datacenter)
+						fmt.Println("------------------------")
+						continue
 					}
 
 				}
